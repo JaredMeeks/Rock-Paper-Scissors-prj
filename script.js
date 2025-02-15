@@ -74,6 +74,7 @@
 
 let playerScore = 0;
 let computerScore = 0;
+let humanChoice = prompt("Enter Rock, Paper, or Scissors");;
 
 
 function getComputerChoice() {
@@ -84,7 +85,7 @@ function getComputerChoice() {
 // console.log(getComputerChoice());
 
 function getHumanChoice() {
-    const humanChoice = prompt("Enter Rock, Paper, or Scissors");
+    // humanChoice = prompt("Enter Rock, Paper, or Scissors");
 
     if (humanChoice.toUpperCase() === "ROCK") {
         return "Rock";
@@ -125,6 +126,11 @@ function playRound(hChoice, cChoice) {
 // console.log(playRound(userChoice, pcChoice));
 
 function playGame() {
-    console.log(playRound(userChoice, pcChoice));
+    for (let i = 0; i < 5; i++) {
+        humanChoice = prompt("Enter Rock, Paper, or Scissors");
+        userChoice = getHumanChoice();
+        pcChoice = getComputerChoice();
+        console.log(playRound(userChoice, pcChoice));
+    }
 }
 playGame();
