@@ -74,7 +74,7 @@
 
 let playerScore = 0;
 let computerScore = 0;
-let humanChoice = prompt("Enter Rock, Paper, or Scissors");;
+// let humanChoice = prompt("Enter Rock, Paper, or Scissors");
 
 
 function getComputerChoice() {
