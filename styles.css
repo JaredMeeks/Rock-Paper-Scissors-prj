@@ -24,14 +24,16 @@ body {
 
 h1 {
     margin: 30px 0 20px;
+    font-family: 'Honk', sans-serif;
 }
 
 .score-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 70%;
+    font-family: 'Langar', sans-serif;
 }
 
 .score-count {
@@ -39,6 +41,14 @@ h1 {
     flex-direction: row;
     justify-content: flex-start;
     margin: 30px 0;
+}
+
+#player-score {
+    color: green;
+}
+
+#computer-score {
+    color: red;
 }
 
 h2 {
@@ -57,10 +67,59 @@ h2 {
 #Scissors {
     width: 7em;
     height: 7em;
+    border-radius: 40%;
+    margin: 30px 0;
 }
 
-#Rock,
-#Paper,
+#Rock:hover,
+#Paper:hover,
 #Scissors:hover {
     cursor: pointer;
+    transform: scale(1.1);
+}
+
+#Rock {
+    background-color: var(--dark-orange);
+}
+
+#Paper {
+    background-color: var(--off-white);
+}
+
+#Scissors {
+    background-color: var(--bright-green);
+}
+
+#Rock img,
+#Scissors img {
+    width: 80%;
+}
+
+#Paper img {
+    width: 100%;
+    border-radius: 40%;
+}
+
+#results {
+    font-family: 'Langar', sans-serif;
+}
+
+#winner {
+    margin-top: 25px;
+    font-family: 'Langar', sans-serif;
+}
+
+#reset-game {
+    display: none;
+    margin: 20px auto;
+    width: 6em;
+    height: 3em;
+    border-radius: 10px;
+}
+
+#reset-game:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: green;
+    color: white;
 }

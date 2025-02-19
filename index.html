@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,14 +21,19 @@
             <h2 id="player-score">0</h2>
         </div>
         <div class="score-count">
-            <h2>AI Overlord: </h2>
+            <h2><i class="fa-solid fa-robot"></i>: </h2>
             <h2 id="computer-score">0</h2>
         </div>
     </section>
     <div class="buttons-container">
-        <button id="Rock">Rock</button>
-        <button id="Paper">Paper</button>
-        <button id="Scissors">Scissors</button>
+        <button id="Rock"><img src="https://openclipart.org/image/2400px/svg_to_png/209758/harvestable-resources-rock.png"/></button>
+        <button id="Paper"><img src="https://static.vecteezy.com/system/resources/previews/005/130/044/non_2x/pile-of-paper-design-illustration-isolated-free-vector.jpg"/></button>
+        <button id="Scissors"><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Scissors.png"/></button>
+    </div>
+    <div class="results-container">
+        <p id="results"></p>
+        <p id="winner"></p>
+        <button id="reset-game">Play again?</button>
     </div>
     <script src="script.js"></script>
 </body>
